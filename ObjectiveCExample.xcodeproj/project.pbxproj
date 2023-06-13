@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,9 +14,12 @@
 		1BF50AF42A30676A001B5582 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BF50AF32A30676A001B5582 /* Assets.xcassets */; };
 		1BF50AF72A30676A001B5582 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BF50AF52A30676A001B5582 /* LaunchScreen.storyboard */; };
 		1BF50AFA2A30676A001B5582 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF50AF92A30676A001B5582 /* main.m */; };
+		1BF50B042A307B3B001B5582 /* DataManagerProviderBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF50B032A307B3B001B5582 /* DataManagerProviderBridge.swift */; };
+		B928E06F3288966C5E0D825A /* Pods_ObjectiveCExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D104DDEC0C5BC7732B347C /* Pods_ObjectiveCExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08BA889A2187069CC5B6B0C4 /* Pods-ObjectiveCExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectiveCExample.debug.xcconfig"; path = "Target Support Files/Pods-ObjectiveCExample/Pods-ObjectiveCExample.debug.xcconfig"; sourceTree = "<group>"; };
 		1BF50AE42A306768001B5582 /* ObjectiveCExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveCExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BF50AE72A306768001B5582 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1BF50AE82A306768001B5582 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +32,10 @@
 		1BF50AF62A30676A001B5582 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BF50AF82A30676A001B5582 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BF50AF92A30676A001B5582 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1BF50B032A307B3B001B5582 /* DataManagerProviderBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagerProviderBridge.swift; sourceTree = "<group>"; };
+		1BF50B052A307BFF001B5582 /* ObjectiveCExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjectiveCExample-Bridging-Header.h"; sourceTree = "<group>"; };
+		98D104DDEC0C5BC7732B347C /* Pods_ObjectiveCExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObjectiveCExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF081BA5780840FAA6F17650 /* Pods-ObjectiveCExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectiveCExample.release.xcconfig"; path = "Target Support Files/Pods-ObjectiveCExample/Pods-ObjectiveCExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B928E06F3288966C5E0D825A /* Pods_ObjectiveCExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +55,8 @@
 			children = (
 				1BF50AE62A306768001B5582 /* ObjectiveCExample */,
 				1BF50AE52A306768001B5582 /* Products */,
+				FCB65E8AB6BE14E906B3FE9B /* Pods */,
+				66B7168DCB633E8269960198 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,8 +82,28 @@
 				1BF50AF52A30676A001B5582 /* LaunchScreen.storyboard */,
 				1BF50AF82A30676A001B5582 /* Info.plist */,
 				1BF50AF92A30676A001B5582 /* main.m */,
+				1BF50B032A307B3B001B5582 /* DataManagerProviderBridge.swift */,
+				1BF50B052A307BFF001B5582 /* ObjectiveCExample-Bridging-Header.h */,
 			);
 			path = ObjectiveCExample;
+			sourceTree = "<group>";
+		};
+		66B7168DCB633E8269960198 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				98D104DDEC0C5BC7732B347C /* Pods_ObjectiveCExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FCB65E8AB6BE14E906B3FE9B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				08BA889A2187069CC5B6B0C4 /* Pods-ObjectiveCExample.debug.xcconfig */,
+				FF081BA5780840FAA6F17650 /* Pods-ObjectiveCExample.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +113,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1BF50AFD2A30676A001B5582 /* Build configuration list for PBXNativeTarget "ObjectiveCExample" */;
 			buildPhases = (
+				A41D05E4F79CAB8578110C95 /* [CP] Check Pods Manifest.lock */,
 				1BF50AE02A306768001B5582 /* Sources */,
 				1BF50AE12A306768001B5582 /* Frameworks */,
 				1BF50AE22A306768001B5582 /* Resources */,
+				70F6AC4EBDF07F7CB31CECB3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -107,11 +139,12 @@
 				TargetAttributes = {
 					1BF50AE32A306768001B5582 = {
 						CreatedOnToolsVersion = 14.3;
+						LastSwiftMigration = 1430;
 					};
 				};
 			};
 			buildConfigurationList = 1BF50ADF2A306768001B5582 /* Build configuration list for PBXProject "ObjectiveCExample" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -141,6 +174,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		70F6AC4EBDF07F7CB31CECB3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ObjectiveCExample/Pods-ObjectiveCExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ObjectiveCExample/Pods-ObjectiveCExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ObjectiveCExample/Pods-ObjectiveCExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A41D05E4F79CAB8578110C95 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ObjectiveCExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1BF50AE02A306768001B5582 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -148,6 +223,7 @@
 			files = (
 				1BF50AEF2A306768001B5582 /* ViewController.m in Sources */,
 				1BF50AE92A306768001B5582 /* AppDelegate.m in Sources */,
+				1BF50B042A307B3B001B5582 /* DataManagerProviderBridge.swift in Sources */,
 				1BF50AFA2A30676A001B5582 /* main.m in Sources */,
 				1BF50AEC2A306768001B5582 /* SceneDelegate.m in Sources */,
 			);
@@ -287,9 +363,11 @@
 		};
 		1BF50AFE2A30676A001B5582 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08BA889A2187069CC5B6B0C4 /* Pods-ObjectiveCExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 96GLU9F9BW;
@@ -308,15 +386,20 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.brainway.ObjectiveCExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ObjectiveCExample/ObjectiveCExample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		1BF50AFF2A30676A001B5582 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF081BA5780840FAA6F17650 /* Pods-ObjectiveCExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 96GLU9F9BW;
@@ -335,6 +418,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.brainway.ObjectiveCExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ObjectiveCExample/ObjectiveCExample-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

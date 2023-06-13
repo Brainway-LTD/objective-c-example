@@ -6,8 +6,11 @@
 //
 
 #import "ViewController.h"
+#import "ObjectiveCExample-Swift.h"
 
 @interface ViewController ()
+
+@property (nonatomic, strong) DataManagerProviderBridge *dmp;
 
 @end
 
@@ -16,7 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.dmp = [DataManagerProviderBridge alloc];
+    [self.dmp initIdxWith:@{@"url": @"URL"}];
 }
-
 
 @end
